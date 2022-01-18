@@ -19,5 +19,5 @@
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: ![GitHub](https://img.shields.io/github/license/AdrianGaray/01_TemplateRepo)
 [license-url]:https://github.com/AdrianGaray/01_TemplateRepo/blob/main/LICENSE
