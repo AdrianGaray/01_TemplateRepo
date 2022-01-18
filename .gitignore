@@ -23,6 +23,7 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+[Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
@@ -61,12 +62,16 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
 # StyleCop
 StyleCopReport.xml
 
 # Files built by Visual Studio
 *_i.c
 *_p.c
+*_i.h
 *_h.h
 *.ilk
 *.meta
@@ -86,6 +91,7 @@ StyleCopReport.xml
 *.tmp_proj
 *_wpftmp.csproj
 *.log
+*.tlog
 *.vspscc
 *.vssscc
 .builds
@@ -127,6 +133,9 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
+# JustCode is a .NET coding add-in
+.JustCode
+
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -136,6 +145,11 @@ _TeamCity*
 # AxoCover is a Code Coverage Tool
 .axoCover/*
 !.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*.json
+coverage*.xml
+coverage*.info
 
 # Visual Studio code coverage results
 *.coverage
@@ -188,10 +202,13 @@ PublishScripts/
 *.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
+**/packages/*
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
+!**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/[Pp]ackages/repositories.config
+#!**/packages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
@@ -218,6 +235,7 @@ _pkginfo.txt
 *.[Cc]ache
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
+!*.[Cc]ache/
 
 # Others
 ClientBin/
@@ -302,6 +320,13 @@ paket-files/
 # CodeRush personal settings
 .cr/personal
 
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
+
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
@@ -309,6 +334,7 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/**
 # !tools/packages.config
+# tools/
 
 # Tabs Studio
 *.tss
@@ -340,6 +366,9 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
+# Visual Studio History (VSHistory) files
+.vshistory/
+
 # BeatPulse healthcheck temp database
 healthchecksdb
 
@@ -348,3 +377,42 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Fody - auto-generated XML schema
+FodyWeavers.xsd
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Windows Installer files from build outputs
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# JetBrains Rider
+*.sln.iml
+
+### VisualStudio Patch ###
+# Additional files built by Visual Studio
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+
+### AzureFunctions ###
+# Azure Functions localsettings file
+local.settings.json
