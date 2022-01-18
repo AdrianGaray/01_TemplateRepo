@@ -5,8 +5,8 @@ A template to use for all repos
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/AdrianGaray/01_TemplateRepo/blob/main/Images/netcore_logo.png">
+    <img src="Images/netcore_logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Project Name</h3>
